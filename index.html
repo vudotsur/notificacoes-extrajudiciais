@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificações Extrajudiciais Editáveis | Modelos de Cobrança, Rescisão e Despejo</title>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18546965327"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18546965327');
+  </script>
+
+  <style>
+    :root {
+      --bg: #140d16;
+      --card: #201323;
+      --border: #38213e;
+      --text: #f8fafc;
+      --muted: #a193a4;
+      --primary: #ec4899;
+      --primary-hover: #db2777;
+      --accent: #f59e0b;
+      --danger: #ef4444;
+      --success: #10b981;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); display: flex; justify-content: center; padding: 24px 14px; line-height: 1.5; }
+    .container { max-width: 580px; width: 100%; }
+    .header-hero { text-align: center; margin-bottom: 24px; }
+    .badge { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: rgba(236, 72, 153, 0.12); color: var(--primary); padding: 7px 18px; border-radius: 999px; font-size: 13px; font-weight: 700; margin-bottom: 16px; border: 1px solid rgba(236, 72, 153, 0.3); }
+    h1 { font-size: 26px; line-height: 1.25; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.02em; text-align: center; }
+    .hero-sub { font-size: 15px; color: var(--muted); text-align: center; line-height: 1.5; margin-bottom: 20px; }
+    .highlight { color: var(--primary); }
+    
+    .alert-box { background: rgba(239, 68, 68, 0.08); border-left: 4px solid var(--danger); padding: 16px; border-radius: 8px; margin-bottom: 24px; font-size: 14px; color: #fca5a5; line-height: 1.6; border: 1px solid rgba(239, 68, 68, 0.2); }
+    
+    .content-card { background: var(--card); border-radius: 14px; padding: 24px; border: 1px solid var(--border); box-shadow: 0 8px 30px rgba(0,0,0,0.3); margin-bottom: 20px; }
+    .content-card h2 { font-size: 19px; margin-bottom: 16px; font-weight: 700; color: #fff; }
+    .feature-list { list-style: none; margin-bottom: 24px; }
+    .feature-list li { margin-bottom: 14px; display: flex; align-items: flex-start; font-size: 14.5px; color: #cbd5e1; }
+    .feature-list li .check { color: var(--success); margin-right: 10px; font-weight: 900; font-size: 16px; }
+    
+    .law-box { background: rgba(20, 13, 22, 0.8); padding: 16px; border-radius: 10px; border: 1px solid var(--border); margin-bottom: 20px; font-size: 13.5px; color: #e2e8f0; }
+    .law-box strong { color: var(--accent); }
+
+    .price-box { text-align: center; background: rgba(20, 13, 22, 0.8); padding: 22px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 20px; }
+    .old-price { font-size: 14px; color: var(--muted); text-decoration: line-through; }
+    .new-price { font-size: 42px; font-weight: 900; color: var(--primary); margin: 6px 0; }
+    .price-sub { font-size: 13px; color: var(--muted); }
+    
+    .btn-checkout { display: block; width: 100%; background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); color: #fff; text-align: center; text-decoration: none; padding: 18px; font-size: 17px; font-weight: 800; border-radius: 10px; transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 6px 20px rgba(236, 72, 153, 0.35); text-transform: uppercase; letter-spacing: 0.02em; }
+    .btn-checkout:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(236, 72, 153, 0.5); }
+    
+    .delivery-badge { display: flex; align-items: center; justify-content: center; gap: 8px; background: rgba(16, 185, 129, 0.08); border: 1px dashed rgba(16, 185, 129, 0.3); padding: 12px; border-radius: 8px; margin-top: 14px; font-size: 13px; color: #a7f3d0; text-align: center; }
+    .footer-guarantee { text-align: center; margin-top: 14px; font-size: 13px; color: var(--muted); display: flex; justify-content: center; align-items: center; gap: 8px; }
+    
+    /* FAQ ACCORDION */
+    .faq-item { border-bottom: 1px solid var(--border); padding: 14px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { font-size: 15px; font-weight: 700; color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-answer { display: none; font-size: 13.5px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+    
+    /* FOOTER JURIDICO STRICT COMPLIANCE */
+    footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); line-height: 1.6; text-align: center; }
+    footer a { color: var(--muted); text-decoration: underline; margin: 0 6px; }
+    .disclaimer-gov { background: rgba(20, 13, 22, 0.6); padding: 12px; border-radius: 6px; margin-top: 14px; border: 1px solid rgba(255, 255, 255, 0.05); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER HERO -->
+    <header class="header-hero">
+      <div class="badge">📜 AUTOTUTELA JURÍDICA EXTRAJUDICIAL (CÓDIGO CIVIL)</div>
+      <h1>Precisa Cobrar um Devedor ou Exigir um Acordo? <span class="highlight">Notifique com Autoridade</span> Sem Advogado</h1>
+      <p class="hero-sub">Kit completo de modelos de Notificações Extrajudiciais editáveis em Word (.docx) com fundamentação no Código Civil e CPC para resolver conflitos antes da Justiça.</p>
+    </header>
+
+    <!-- ALERTA DE MORA -->
+    <div class="alert-box">
+      <strong>⚠️ O PODER DO ARTIGO 397 DO CÓDIGO CIVIL:</strong><br>
+      A Notificação Extrajudicial constitui o devedor formalmente em MORA, interrompe prazos prescricionais e serve como prova irrefutável de tentativa amigável em caso de futura ação judicial com penhora de bens.
+    </div>
+
+    <!-- SEÇÃO 1: CONTEÚDO DO KIT (METODO) -->
+    <section class="content-card" id="metodo">
+      <h2>📁 Modelos Inclusos Prontos para Copiar e Preencher:</h2>
+      <ul class="feature-list">
+        <li><span class="check">✔</span> <div><strong>Modelo 1: Cobrança Amigável e Constituição em Mora (Art. 397 CC):</strong> Para cobrar devedores de serviços, notas fiscais, cheques, aluguéis ou dívidas particulares com prazo fatal de 48h antes de protesto/SPC.</div></li>
+        <li><span class="check">✔</span> <div><strong>Modelo 2: Desocupação de Imóvel e Denúncia Locatícia (Lei 8.245/91):</strong> Para proprietários notificarem inquilinos para desocupação em 30 dias sob pena de despejo com liminar de 15 dias.</div></li>
+        <li><span class="check">✔</span> <div><strong>Modelo 3: Rescisão Contratual por Inadimplemento (Art. 475 CC):</strong> Para rescindir contratos com prestadores ou fornecedores que atrasaram, abandonaram a obra ou entregaram com defeito, exigindo reembolso imediato.</div></li>
+        <li><span class="check">✔</span> <div><strong>Modelo 4: Notificação por Perturbação de Sossego (Art. 1.277 CC):</strong> Para vizinhos barulhentos ou condôminos infratores com advertência de Ação de Obrigação de Não Fazer e multa diária.</div></li>
+        <li><span class="check">✔</span> <div><strong>Modelo 5: Cobrança Prévia de Pensão Alimentícia em Atraso:</strong> Advertência formal prévia antes do pedido de prisão civil ou penhora no Art. 528 do CPC.</div></li>
+        <li><span class="check">✔</span> <div><strong>Instruções de Envio com Fé Pública:</strong> Como enviar por Cartório de Títulos e Documentos (Art. 160 Lei 6.015/73) ou Carta com AR nos Correios.</div></li>
+      </ul>
+      
+      <div class="law-box">
+        💡 <strong>Estatística Processual:</strong> Mais de 70% das notificações formais enviadas com prazos expressos e advertência de negativação no SPC/SERASA são liquidadas sem necessidade de gastar milhares de reais com honorários judiciais.
+      </div>
+    </section>
+
+    <!-- OFERTA E CHECKOUT -->
+    <section class="content-card" id="oferta">
+      <h2>🚀 Libere Acesso Imediato ao Kit de Notificações</h2>
+      
+      <div class="price-box">
+        <p class="old-price">De R$ 97,00 por apenas</p>
+        <p class="new-price">R$ 24,90</p>
+        <p class="price-sub">Pagamento único · Sem mensalidades · Acesso vitalício</p>
+      </div>
+
+      <a href="https://pay.kiwify.com.br/notificacoes-extrajudiciais" class="btn-checkout" id="cta-checkout">
+        Baixar Kit de Notificações Agora ➔
+      </a>
+
+      <div class="delivery-badge">
+        ⚡ <strong>Download Instantâneo:</strong> Acesso enviado para o seu e-mail imediatamente após a confirmação do pagamento.
+      </div>
+
+      <div class="footer-guarantee" id="garantia">
+        🛡️ Garantia Blindada de 7 Dias: Se não ficar satisfeito, devolvemos 100% do seu dinheiro.
+      </div>
+    </section>
+
+    <!-- BÔNUS EXCLUSIVOS -->
+    <section class="content-card" id="bonus">
+      <h2>🎁 Bônus Inclusos Gratuitamente:</h2>
+      <ul class="feature-list">
+        <li><span class="check">✔</span> <div><strong>Guia de Como Notificar via WhatsApp com Validade:</strong> Como registrar a ata notarial ou exportar histórico com hash de autenticidade para prova em juízo.</div></li>
+        <li><span class="check">✔</span> <div><strong>Tabela de Prazos Legais do Código Civil:</strong> Prazos de 24h, 48h, 5 dias, 15 dias e 30 dias para cada tipo de notificação.</div></li>
+        <li><span class="check">✔</span> <div><strong>Arquivos em Formato Word (.docx):</strong> Prontos para preenchimento no Word, celular ou Google Docs.</div></li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="content-card">
+      <h2>Perguntas Frequentes</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">A notificação tem validade sem assinatura de advogado? <span>+</span></div>
+        <div class="faq-answer">Sim! A notificação extrajudicial é um ato privativo do próprio credor ou titular do direito (autotutela legal prevista nos Artigos 397 e 188 do Código Civil). Qualquer pessoa física ou jurídica pode emitir e assinar.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Como devo enviar a notificação para ter prova legal? <span>+</span></div>
+        <div class="faq-answer">A forma mais comum e econômica é enviar por Carta Registrada com Aviso de Recebimento (AR) pelos Correios. Guarde a cópia do documento assinado e o comprovante do AR assinado pelo destinatário. O guia explica o passo a passo completo.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Como receberei o material após a compra? <span>+</span></div>
+        <div class="faq-answer">Imediatamente após a aprovação do pagamento, você receberá um e-mail da Kiwify com o link exclusivo para download do Guia em PDF e de todos os arquivos editáveis (.docx).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Como funciona a garantia de 7 dias? <span>+</span></div>
+        <div class="faq-answer">Você tem 7 dias para testar todos os modelos. Se achar que o material não atendeu sua expectativa, basta solicitar o reembolso na plataforma Kiwify com 1 clique e receberá 100% do seu dinheiro de volta.</div>
+      </div>
+    </section>
+
+    <!-- FOOTER E DISCLAIMER COMPLIANCE GOOGLE ADS -->
+    <footer>
+      <p>© 2026 Kit de Notificações Extrajudiciais. Todos os direitos reservados.</p>
+      <p style="margin-top: 6px;">
+        <a href="#garantia">Garantia 7 Dias</a> |
+        <a href="termos.html">Termos de Uso</a> |
+        <a href="privacidade.html">Política de Privacidade</a> |
+        <a href="mailto:contato@vudotsur.com.br">Suporte por E-mail</a>
+      </p>
+
+      <div class="disclaimer-gov">
+        <strong>Aviso Legal & Isenção de Vínculo:</strong> Este site e o produto comercializado fornecem modelos orientativos de autotutela extrajudicial fundamentados na legislação cível federal brasileira (Lei 10.406/2002 e Lei 13.105/2015). A utilização do material não constitui consultoria jurídica individualizada para demandas judiciais contenciosas, recomendando-se advogado para representação processual perante o Poder Judiciário.
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    function toggleFaq(el) {
+      const ans = el.nextElementSibling;
+      const isVisible = ans.style.display === 'block';
+      ans.style.display = isVisible ? 'none' : 'block';
+      el.querySelector('span').innerText = isVisible ? '+' : '−';
+    }
+  </script>
+
+</body>
+</html>
